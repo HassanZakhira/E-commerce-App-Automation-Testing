@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="19" time="667.142">
+<testcase classname="Guest could register with valid data" name="Guest could register with valid data" time="40.245">
+<system-out><![CDATA[Given Click on Register Tab.................................................passed
+And Click on any Gender "male"..............................................passed
+And Fill First Name "Hassan"................................................passed
+And Fill Second Name "Zakhira"..............................................passed
+And Select Day "1"..........................................................passed
+And Select Month "6"........................................................passed
+And Select Year "1999"......................................................passed
+And Enter any email "HassanAutomation77@gmail.com"..........................passed
+And Enter any company name "Automation Company".............................passed
+And Enter password "P@ssw0rd"...............................................passed
+And Enter Confirm password "P@ssw0rd".......................................passed
+And Click on REGISTER button................................................passed
+Then userShouldSeeMessage...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="guest user could Login with valid credentials" name="guest user could Login with valid credentials" time="29.97">
+<system-out><![CDATA[Given Click on Login Tab....................................................passed
+And Enter valid Email And Password..........................................passed
+Then Click on Login Button..................................................passed
+Then Go to correct URl......................................................passed
+Then MYAccount Displayed....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User could reset his/her password successfully" name="User could reset his/her password successfully" time="26.998">
+<system-out><![CDATA[Given Click on Login Tab....................................................passed
+And Click on forgot Password................................................passed
+And Enter Your email address................................................passed
+And Click on Recover Button.................................................passed
+Then Email with instructions has been sent to you...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Guest User could search for any product" name="Guest User could search for any product by Name" time="21.191">
+<system-out><![CDATA[Given click on search field in Home page....................................passed
+And search for any product like "Apple".....................................passed
+Then Assertion Soft Go to URL...............................................passed
+And results size is more than zero..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Guest User could search for any product" name="SKU search" time="22.529">
+<system-out><![CDATA[Given click on search field in Home page....................................passed
+And search for any product By SKU Search "AP_MBP_13"........................passed
+Then See correct Product OF SKU.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="guest user could switch between currencies" name="guest user could switch between currencies" time="27.171">
+<system-out><![CDATA[Given Select Euro...........................................................passed
+Then see Euro sign..........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="users will be able to open sliders in home page" name="First slider are clickable in home" time="24.74">
+<failure message="element click intercepted: Element &lt;a href=&quot;http://demo.nopcommerce.com/&quot; aria-label=&quot;&quot; class=&quot;nivo-imageLink&quot; style=&quot;display: block;&quot;&gt;...&lt;/a&gt; is not clickable at point (674, 430). Other element would receive the click: &lt;a href=&quot;http://demo.nopcommerce.com/&quot; aria-label=&quot;&quot; class=&quot;nivo-imageLink&quot; style=&quot;display: block;&quot;&gt;...&lt;/a&gt;&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.2.1', revision: 'ac4d0fdd4a'&#10;System info: host: 'HASSAN', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [633080f639747217da23e29b4e94e80b, clickElement {id=4c09b62b-a848-4e20-8ffe-e77009dfdf42}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\PClaptop\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54867}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54867/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (633080f639747217da23e29b4e94e80b)] -&gt; xpath: //a[@href=&quot;http://demo.nopcommerce.com/&quot;][1]]&#10;Session ID: 633080f639747217da23e29b4e94e80b" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given user click on first slider............................................failed
+Then relative product for first slider is displayed.........................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="http://demo.nopcommerce.com/" aria-label="" class="nivo-imageLink" style="display: block;">...</a> is not clickable at point (674, 430). Other element would receive the click: <a href="http://demo.nopcommerce.com/" aria-label="" class="nivo-imageLink" style="display: block;">...</a>
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
+System info: host: 'HASSAN', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [633080f639747217da23e29b4e94e80b, clickElement {id=4c09b62b-a848-4e20-8ffe-e77009dfdf42}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\PClaptop\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54867}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54867/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (633080f639747217da23e29b4e94e80b)] -> xpath: //a[@href="http://demo.nopcommerce.com/"][1]]
+Session ID: 633080f639747217da23e29b4e94e80b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.example.stepDefinitions.D06_homeSlidersStep.user_click_on_first_slider(D06_homeSlidersStep.java:16)
+	at ✽.user click on first slider(file:///E:/testing/Cucumber/project/demo_nopcommerce/src/main/resources/features/F06_homeSliders.feature:4)
+]]></failure>
+</testcase>
+<testcase classname="users will be able to open sliders in home page" name="Second slider are clickable in home" time="30.117">
+<failure message="expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]" type="java.lang.AssertionError"><![CDATA[Given user click on Second slider...........................................passed
+Then relative product for Second slider is displayed........................failed
+
+StackTrace:
+java.lang.AssertionError: expected [https://demo.nopcommerce.com/iphone-6] but found [https://demo.nopcommerce.com/]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at org.example.stepDefinitions.D06_homeSlidersStep.relative_product_for_Second_slider_is_displayed(D06_homeSlidersStep.java:39)
+	at ✽.relative product for Second slider is displayed(file:///E:/testing/Cucumber/project/demo_nopcommerce/src/main/resources/features/F06_homeSliders.feature:9)
+]]></failure>
+</testcase>
+<testcase classname="Guest user could select different Categories" name="user could hover categories" time="29.165">
+<system-out><![CDATA[Given Select Euro...........................................................passed
+When user hover random category.............................................passed
+Then CategoryNameAssertion..................................................passed
+When select random subcategory..............................................passed
+Then subCategoryNameAssertion...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Guest user could filter with color" name="Select Apparel Category and filter with Random color" time="40.78">
+<system-out><![CDATA[Given Select Euro...........................................................passed
+When Select Apparel Category................................................passed
+Then CategoryApparelAssertion...............................................passed
+And Select shoes SubCategory................................................passed
+Then shoes SubCategory Assertion............................................passed
+And filter Category with Random color.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logged user could select different tags" name="Logged user could select Random tags" time="32.888">
+<system-out><![CDATA[Given Select Euro...........................................................passed
+Then see Euro sign..........................................................passed
+When user hover random category.............................................passed
+Then CategoryNameAssertion..................................................passed
+Given Guest select random tag...............................................passed
+Then user should see relative products to the selected tag..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Guest user could add different products to Shopping cart" name="User Add Random product to Shopping cart" time="47.992">
+<system-out><![CDATA[Given Select Euro...........................................................passed
+Then Cart Overview..........................................................passed
+When select random category.................................................passed
+And check if category have subcategory......................................passed
+And Add Random Product to cart..............................................passed
+Then Cart Updated And prise is displayed....................................passed
+And Products in cart Greater than zero......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Guest could add different products to Wishlist" name="add different products to Wishlist" time="42.398">
+<system-out><![CDATA[Given Select Euro...........................................................passed
+Given Wishlist Overview.....................................................passed
+When select random category.................................................passed
+Then check if category have subcategory.....................................passed
+And Add Random Product to Wishlist..........................................passed
+And user get number of items Wishlist after adding product..................passed
+Then number of Wishlist items increased.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Guest user could add different products to compare list" name="add different products to CompareList" time="50.139">
+<system-out><![CDATA[Given Select Euro...........................................................passed
+Then see Euro sign..........................................................passed
+When select random category.................................................passed
+Then check if category have subcategory.....................................passed
+And Add Random Product to CompareList.......................................passed
+And CompareList updated.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create successful Order" name="Create successful Order" time="99.606">
+<system-out><![CDATA[Given Click on Login Tab....................................................passed
+And Enter valid Email And Password..........................................passed
+Then Click on Login Button..................................................passed
+Then Cart Overview..........................................................passed
+When select random category.................................................passed
+And check if category have subcategory......................................passed
+And Add Random Product to cart..............................................passed
+Then Cart Updated And prise is displayed....................................passed
+And Products in cart Greater than zero......................................passed
+And Add address.............................................................passed
+And click on agree..........................................................passed
+And click on checkout.......................................................passed
+And Billing address.........................................................passed
+And Shipping method.........................................................passed
+And Payment method..........................................................passed
+And Payment Information.....................................................passed
+And Confirm Order...........................................................passed
+Then Check successfully Order...............................................passed
+And Check All Orders........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Click of Follow us Links" name="opens facebook link" time="22.241">
+<system-out><![CDATA[When opens facebook link....................................................passed
+Then go to correct Tab And check URl "https://www.facebook.com/nopCommerce".passed
+]]></system-out>
+</testcase>
+<testcase classname="Click of Follow us Links" name="opens twitter link" time="22.589">
+<system-out><![CDATA[When opens twitter link.....................................................passed
+Then go to correct Tab And check URl "https://twitter.com/nopCommerce"......passed
+]]></system-out>
+</testcase>
+<testcase classname="Click of Follow us Links" name="opens YouTube link" time="24.872">
+<system-out><![CDATA[When opens YouTube link.....................................................passed
+Then go to correct Tab And check URl "https://www.youtube.com/user/nopCommerce".passed
+]]></system-out>
+</testcase>
+<testcase classname="Click of Follow us Links" name="opens rss link" time="31.012">
+<failure message="Index: 1, Size: 1" type="java.lang.IndexOutOfBoundsException"><![CDATA[When opens rss link.........................................................passed
+Then go to correct Tab And check URl "https://demo.nopcommerce.com/news/rss/1".failed
+
+StackTrace:
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at org.example.stepDefinitions.D13_followUsStep.opens_correct_Tap(D13_followUsStep.java:47)
+	at ✽.go to correct Tab And check URl "https://demo.nopcommerce.com/news/rss/1"(file:///E:/testing/Cucumber/project/demo_nopcommerce/src/main/resources/features/F13_followUs.feature:18)
+]]></failure>
+</testcase>
+</testsuite>
